@@ -15,7 +15,7 @@ CI and CD is supported, including docker integration
 supports parallel testing in selenium needs to depend on testng
 Autowait - built in - no need to add explicit waits
 Built in assertions available
-Multi and multi window supported
+Multi tab and multi window supported
 Different types of frames like iframe testing supported, shadow dom elements can be identified
 Parameterization is supported
 Emulate mobile devices - to test application in mobile browser
