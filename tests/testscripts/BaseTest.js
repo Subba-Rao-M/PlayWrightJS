@@ -23,7 +23,8 @@ exports.BaseTest = class BaseTest {
   async setup() {
     // Perform setup tasks
     // For example, launching the browser and creating a new page
-    this.env = process.env.TEST_ENV || 'acc'; // Default to the sys environment
+    let localenv = 'sys'
+    this.env = process.env.TEST_ENV || localenv; // Default to the sys environment
     this.config = require('../config/'+env);
     this.context = await test.newContext();
     this.page = await this.context.newPage();

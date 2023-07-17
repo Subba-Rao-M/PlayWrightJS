@@ -2,8 +2,8 @@ import { test, expect } from '@playwright/test';
 
 const { LoginPage } = require('../pages/LoginPage');
 
-
-const env = process.env.TEST_ENV || 'acc'; // Default to the sys environment
+const lenv = 'acc'
+const env = process.env.TEST_ENV || lenv; // Default to the sys environment
 const config = require('../config/'+env);
 
 test.beforeEach(async ({ page }) => {
